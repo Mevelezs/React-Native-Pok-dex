@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 import Favorite from '../screens/Favorite';
 import Pokedex from '../screens/Pokedex';
 import Acount from '../screens/Acount';
-
+import HeaderNavigator from './HeaderNavigator';
 
 const Tab = createBottomTabNavigator()
 
@@ -23,12 +23,14 @@ export default function Navigation() {
         }}
       />
       <Tab.Screen
-        name="Pokedex"
-        component={Pokedex}
+        name="HeaderNavigator"
+        component={HeaderNavigator}
         options={{
           tabBarLabel: 'Pokedex',
           headerTitleAlign:'center',
-          tabBarIcon: () => RenderPokeball()
+          tabBarIcon: () => RenderPokeball(),
+          title: '',
+          headerTransparent:true,
         }}
       />
       <Tab.Screen
