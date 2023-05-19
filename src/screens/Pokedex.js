@@ -1,6 +1,6 @@
 import { View } from 'react-native'
 import React, { useState, useEffect } from 'react'
-import {getPokemonDetailByUrlApi, getPokemonsApi} from '../api/pokemon'
+import { getPokemonDetailByUrlApi, getPokemonsApi } from '../api/pokemon';
 import PokemonList from '../components/PokemonList';
 
 export default function Pokedex() {

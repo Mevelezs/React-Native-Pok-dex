@@ -18,11 +18,9 @@ export default function PokemonCard({ pokemon }) {
   const bgStyle = { backgroundColor: pokemonColor, ...styles.bgStyle };
 
   const goToPokemon = () => {
-    Navigation.navigate('pokemonDetail', { id: pokemon.id });
-              // nombre del componente // id del poke al que de accede
-    console.log(pokemon.id);
+    Navigation.navigate('pokemonDetail', { pokemon : pokemon});
+               // nombre del componente // id del poke al que de accede
   };
-  
   return (
     <TouchableWithoutFeedback onPress={goToPokemon}>
       <View style={styles.card}>
@@ -43,7 +41,7 @@ export default function PokemonCard({ pokemon }) {
 const styles = StyleSheet.create({
   card: {
     flex: 1,
-    height:130
+    height: 130,
   },
   spacing: {
     flex: 1,

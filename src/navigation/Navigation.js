@@ -2,7 +2,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Favorite from '../screens/Favorite';
-import Pokedex from '../screens/Pokedex';
 import Acount from '../screens/Acount';
 import HeaderNavigator from './HeaderNavigator';
 
@@ -16,9 +15,9 @@ export default function Navigation() {
         component={Favorite}
         options={{
           tabBarLabel: 'Favoritos',
-          headerTitleAlign:'center',
+          headerTitleAlign: 'center',
           tabBarIcon: ({color, size}) => (
-            <Icon name='heart'color= {color} size={size} />
+            <Icon name='heart' color={color} size={size} />
           )
         }}
       />
@@ -30,7 +29,8 @@ export default function Navigation() {
           headerTitleAlign:'center',
           tabBarIcon: () => RenderPokeball(),
           title: '',
-          headerTransparent:true,
+          headerTransparent: true,
+          tabBarLabelPosition: 20,
         }}
       />
       <Tab.Screen
