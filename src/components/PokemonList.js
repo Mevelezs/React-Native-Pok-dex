@@ -34,7 +34,7 @@ export default function PokemonList({ pokemons,loadPokemon , nextUrl }) {
 const styles = StyleSheet.create({
   flatListContentContainer: {
     paddingHorizontal: 5,
-    marginTop: Platform.OS === 'android'? 36 : 0,
+    marginTop: Platform.OS === 'android'? 10 : 0,
   },
   spinner: {
     color: "black",

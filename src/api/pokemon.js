@@ -28,7 +28,7 @@ export default async function getPokemonByIdApi(id) {
   try {
     const resp = await fetch(`${API_HOST}/pokemon/${id}`);
     const data = await resp.json();
-    return data.types;
+    return data;
   } catch (error) {
     throw new Error(error);
   }

@@ -25,17 +25,16 @@ const styles = StyleSheet.create({
 
    bg: {
     width:'100%',
-    height: 500,
+    height: 400,
   },
   header: {
     flex: 1,
-    padding: 5,
     borderBottomRightRadius: 300,
     borderBottomLeftRadius:300
   },
   number: {
     position: 'absolute',
-    top: 50,
+    top: 60,
     right:10,
     color: 'white',
     fontSize: 28,
@@ -43,9 +42,10 @@ const styles = StyleSheet.create({
   },
   name: {
     color: 'white',
-    fontSize: 32,
+    fontSize: 28,
     fontWeight: 'bold',
-    paddingTop: 50,
+    paddingTop: 60,
+    paddingLeft: 20,
   },
   content_image: {
     flex: 1,
@@ -56,9 +56,9 @@ const styles = StyleSheet.create({
   },
   image: {
     position: 'absolute',
-    right: 48,
+    right: '20%',
     bottom:28,
-    width: 300,
-    height: 300
+    width: 250,
+    height: 250
   }
 })

@@ -5,7 +5,7 @@ import Favorite from '../screens/Favorite';
 import Acount from '../screens/Acount';
 import HeaderNavigator from './HeaderNavigator';
 
-const Tab = createBottomTabNavigator()
+const Tab = createBottomTabNavigator();
 
 export default function Navigation() {
   return (
@@ -25,12 +25,17 @@ export default function Navigation() {
         name="HeaderNavigator"
         component={HeaderNavigator}
         options={{
-          tabBarLabel: 'Pokedex',
+          tabBarLabel: ' ',
           headerTitleAlign:'center',
           tabBarIcon: () => RenderPokeball(),
-          title: '',
-          headerTransparent: true,
-          tabBarLabelPosition: 20,
+          title: 'Pokedex',
+          headerTitleStyle: {
+            color: '#f0f',
+            fontSize: 20,
+            fontWeight: 'bold',
+            fontFamily: 'Roboto',
+            padding: 5,
+          }
         }}
       />
       <Tab.Screen
